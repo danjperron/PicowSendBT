@@ -2,7 +2,7 @@ daniel@Pi5:~/pico $ git clone https://github.com/danjperron/PicowSendBT
 daniel@Pi5:~/pico $ cd PicowSendBT
 daniel@Pi5:~/pico/PicowSendBT $ mkdir build
 daniel@Pi5:~/pico/PicowSendBT $ cd build
-daniel@Pi5:~/pico/PicowSendBT/build $ make ..
+daniel@Pi5:~/pico/PicowSendBT/build $ cmake ..
 daniel@Pi5:~/pico/PicowSendBT/build $ make
 daniel@Pi5:~/pico/PicowSendBT/build $ sudo openocd -f interface/cmsis-dap.cfg -f target/rp2040.cfg -c "adapter speed 5000" -c "program PicowSendBT.elf verify reset exit"
 daniel@Pi5:~ $ 
